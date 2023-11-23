@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400&display=swap');
+
+$para-text: 1.7rem;
+$text-color: #ECF4D6;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, #265073, #2D9596);
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    height: 30rem;
+
+    input {
+        padding: .7rem 1rem;
+        font-size: 1.1rem;
+        color: $text-color;
+        background-color: #265073;
+        border: none;
+        outline: none;
+
+        &:hover {
+            cursor: pointer;
+            background: linear-gradient(190deg, #2D9596, #9AD0C2);
+        }
+    }
+
+    .box {
+        position: relative;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 40px 2px #0000006c;
+        color: $text-color;
+        min-width: 25rem;
+        height: 12rem;
+        padding: 3rem 2rem;
+        font-size: $para-text;
+        font-family: 'Fraunces', serif;
+
+        span {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 1rem;
+            font-size: .8rem;
+            color: #B31312;
+        }
+
+        #delivery {
+            margin-top: 1rem;
+            font-style: italic;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+h1 {
+    color: $text-color;
+    text-align: center;
+    margin-top: 2rem;
+}
